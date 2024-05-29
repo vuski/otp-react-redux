@@ -18,7 +18,7 @@ api:
   port: 8080
   v2: true
 
-# Determines if the header brand should be clickable or not. If set to true, 
+# Determines if the header brand should be clickable or not. If set to true,
 # clicking the header brand will go back to the main trip planner page and wipe out any
 # results.
 # brandClickable: true/false
@@ -49,8 +49,8 @@ api:
 #   mobile: BOTH_LOCATIONS_CHANGED
 #   default: ONE_LOCATION_CHANGED
 
-### If Terms of Service is hosted at an outside link, provide it here. If translations 
-### are provided, host each translation by including the language code (eg. en-US, fr, es) 
+### If Terms of Service is hosted at an outside link, provide it here. If translations
+### are provided, host each translation by including the language code (eg. en-US, fr, es)
 ### in the URL and use {locale} to represent the language in the link below
 # termsOfServiceLink:
 
@@ -114,8 +114,8 @@ persistence:
 #        href: ''
 
 map:
-  initLat: 45.52
-  initLon: -122.682
+  initLat: 37.55443
+  initLon: 126.97058
   baseLayers:
     - name: Streets
       # These tiles are free to use, but not in production
@@ -168,7 +168,6 @@ map:
   #       font-family: Hind, sans-serif
   #       font-size: 18px
   #   disableFlexArc: true
-  
 
 # it is possible to leave out a geocoder config entirely. In that case only
 # GPS coordinates will be used when finding the origin/destination.
@@ -401,14 +400,13 @@ itinerary:
   # The sort options to display in the sort options list
   # If unset, will display all.
   # Available sort options: 'BEST', 'DURATION', 'ARRIVALTIME', 'WALKTIME', 'COST', 'DEPARTURETIME'
-  # sortModes: 
+  # sortModes:
   #   - 'BEST'
   #   - 'DURATION'
   #   - 'ARRIVALTIME'
   #   - 'WALKTIME'
   #   - 'COST'
   #   - 'DEPARTURETIME'
-
 # The transitOperators key is a list of transit operators that can be used to
 # order transit agencies when sorting by route. Also, this can optionally
 # provide operator logos that appear in the the route viewer and itineraries).
@@ -523,9 +521,9 @@ itinerary:
 # popups:
 #   targets:
 #     testTarget: # To set a name for this target, create the i18n string "config.popups.testTarget"
-#       url: http://example.com/ 
+#       url: http://example.com/
 #       modal: false # Setting this to false always launches the popup as a browser popup
-#     secondTarget: 
+#     secondTarget:
 #       url: http://test.com/
 #       appendLocale: false # Defaults to true, if set to false otp-rr will not append the current i18n language to the popup URL.
 #   launchers:
